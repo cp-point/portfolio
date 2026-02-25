@@ -1,0 +1,66 @@
+.intro {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 870px;
+    height: 1117px;
+    background: url('@/assets/images/intro-bg.png') no-repeat center;
+  }
+
+  &-title {
+    display: inline-block;
+    position: relative;
+    font-size: 156px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+  }
+
+  &-line {
+    position: absolute;
+    bottom: 34px;
+    left: 11px;
+    width: calc(100% - 100px);
+    height: 5px;
+    transform-origin: left center;
+    background: #000;
+  }
+
+  &-year {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 700;
+    color: #c3c3c3;
+  }
+
+  &-name {
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: 96px;
+    font-weight: 700;
+    text-align: right;
+    color: #86a8ff;
+    -webkit-clip-path: inset(0 100% 0 0);
+  }
+}
+
+@keyframes introBgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.intro {
+  animation: introBgMove 18s ease-in-out infinite alternate;
+}

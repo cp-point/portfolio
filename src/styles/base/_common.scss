@@ -1,0 +1,50 @@
+@use '@/styles/base/font' as *;
+@use '@/styles/base/reset' as *;
+@use '@/styles/base/variables' as *;
+@use '@/styles/base/contents' as *;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #d9d9d9;
+}
+
+html {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Line_R', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+p {
+  line-height: 1.4;
+  color: $gray;
+}
+
+section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 300px 0;
+}

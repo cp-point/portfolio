@@ -1,0 +1,147 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  width: 900px;
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 80px);
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1001;
+
+  &-dim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1000;
+  }
+
+  &-close {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    font-size: 48px;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 50px;
+    margin-top: 60px;
+  }
+
+  &-info { flex: 1; }
+
+  &-project-period {
+    font-size: 14px;
+    color: #888;
+  }
+
+  &-project-title {
+    margin: 12px 0 24px;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  &-project-meta {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+
+      strong {
+        min-width: 80px;
+        color: #a78bfa;
+      }
+
+      .tech-icons {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+
+        & > span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &.icon-react { background-image: url('@/assets/icon/icon-skill-react.png'); }
+          &.icon-typescript { background-image: url('@/assets/icon/icon-skill-typescript.png'); }
+          &.icon-js { background-image: url('@/assets/icon/icon-skill-javascript.png'); }
+          &.icon-vue { background-image: url('@/assets/icon/icon-skill-vue.png'); }
+          &.icon-scss { background-image: url('@/assets/icon/icon-skill-sass.png'); }
+          &.icon-vite { background-image: url('@/assets/icon/icon-skill-vite.png'); }
+          &.icon-webpack { background-image: url('@/assets/icon/icon-skill-webpack.png'); }
+          &.icon-git { background-image: url('@/assets/icon/icon-skill-github.png'); }
+          &.icon-figma { background-image: url('@/assets/icon/icon-skill-figma.png'); }
+          &.icon-zeplin { background-image: url('@/assets/icon/icon-skill-zeplin.png'); }
+          &.icon-html { background-image: url('@/assets/icon/icon-skill-html.png'); }
+          &.icon-css { background-image: url('@/assets/icon/icon-skill-css.png'); }
+        }
+      }
+    }
+  }
+
+  &-visual {
+    width: 320px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 200px;
+      padding: 4px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+      // object-fit: cover;
+    }
+
+    .site-view-btn {
+      display: inline-block;
+      padding: 8px 24px 6px;
+      margin-top: 16px;
+      font-size: 14px;
+      border-radius: 100px;
+      color: #fff;
+      background: #222;
+    }
+  }
+
+  &-divider {
+    height: 1px;
+    margin: 40px 0;
+    background: #e5e5e5;
+  }
+}
+
+.project-detail {
+  padding: 32px;
+  border-radius: 16px;
+  background: #fafafa;
+
+  h3 {
+    margin-bottom: 12px;
+    color: #8b9cff;
+  }
+
+  p {
+    line-height: 1.7;
+    color: #555;
+  }
+
+  .detail-block {
+    margin-left: 16px;
+
+    ~ .detail-block { margin-top: 12px; }
+  }
+}
