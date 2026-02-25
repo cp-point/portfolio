@@ -49,7 +49,7 @@ export default function Profile() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <div className="profile-image">
-            <img src="/assets/images/profile.svg" alt="profile" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/profile.svg`} alt="profile" />
           </div>
         </motion.div>
 

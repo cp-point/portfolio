@@ -36,9 +36,9 @@ function ProjectInfo({ project, onOpen }) {
 
 function ProjectImgObject({ projectId }) {
   const id = String(projectId).padStart(2, "0")
-  const mainImg = `/assets/images/project${id}.png`
+  const mainImg = `${import.meta.env.BASE_URL}assets/images/project${id}.png`
   // const subImg = Array.from({length: 4}, (_, i) =>
-  //   `/assets/images/project${id}_0${i + 1}.png`
+  //   `${import.meta.env.BASE_URL}assets/images/project${id}_0${i + 1}.png`
   // )
 
   return (

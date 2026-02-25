@@ -75,18 +75,18 @@
           background-repeat: no-repeat;
           background-size: cover;
 
-          &.icon-react { background-image: url('@/assets/icon/icon-skill-react.png'); }
-          &.icon-typescript { background-image: url('@/assets/icon/icon-skill-typescript.png'); }
-          &.icon-js { background-image: url('@/assets/icon/icon-skill-javascript.png'); }
-          &.icon-vue { background-image: url('@/assets/icon/icon-skill-vue.png'); }
-          &.icon-scss { background-image: url('@/assets/icon/icon-skill-sass.png'); }
-          &.icon-vite { background-image: url('@/assets/icon/icon-skill-vite.png'); }
-          &.icon-webpack { background-image: url('@/assets/icon/icon-skill-webpack.png'); }
-          &.icon-git { background-image: url('@/assets/icon/icon-skill-github.png'); }
-          &.icon-figma { background-image: url('@/assets/icon/icon-skill-figma.png'); }
-          &.icon-zeplin { background-image: url('@/assets/icon/icon-skill-zeplin.png'); }
-          &.icon-html { background-image: url('@/assets/icon/icon-skill-html.png'); }
-          &.icon-css { background-image: url('@/assets/icon/icon-skill-css.png'); }
+          &.icon-react { background-image: url('/portfolio/assets/icon/icon-skill-react.png'); }
+          &.icon-typescript { background-image: url('/portfolio/assets/icon/icon-skill-typescript.png'); }
+          &.icon-js { background-image: url('/portfolio/assets/icon/icon-skill-javascript.png'); }
+          &.icon-vue { background-image: url('/portfolio/assets/icon/icon-skill-vue.png'); }
+          &.icon-scss { background-image: url('/portfolio/assets/icon/icon-skill-sass.png'); }
+          &.icon-vite { background-image: url('/portfolio/assets/icon/icon-skill-vite.png'); }
+          &.icon-webpack { background-image: url('/portfolio/assets/icon/icon-skill-webpack.png'); }
+          &.icon-git { background-image: url('/portfolio/assets/icon/icon-skill-github.png'); }
+          &.icon-figma { background-image: url('/portfolio/assets/icon/icon-skill-figma.png'); }
+          &.icon-zeplin { background-image: url('/portfolio/assets/icon/icon-skill-zeplin.png'); }
+          &.icon-html { background-image: url('/portfolio/assets/icon/icon-skill-html.png'); }
+          &.icon-css { background-image: url('/portfolio/assets/icon/icon-skill-css.png'); }
         }
       }
     }
