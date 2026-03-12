@@ -12,12 +12,12 @@ const projects = [
     thumbnail: 'assets/images/project01.png',
     siteUrl: 'https://hsi.cleverse.kr',
     detail: {
-      background: `한화 그룹 내부 임직원을 위한 차세대 그룹웨어 구축 프로젝트로, 기존 레거시 시스템을 대체하고 업무 효율성과 사용성을 개선하는 것이 주요 목표였습니다.`,
-      role: `화면 UI 구현과, 공통 컴포넌트 설계를 하였습니다. 기획,디자인,백엔드와의 협업을 통해 화면 단위 기능 구현을 진행했습니다.`,
-      techDetail: `Vue 기반 SPA 구조로 개발되었으며, Nuxt를 활용한 페이지 구성과 컴포넌트 단위 개발 방식을 적용했습니다. 공통 레이아웃과 반복되는 UI 요소를 컴포넌트화하여 유지보수성과 확장성을 고려한 구조를 설계했습니다.`,
+      background: `한화 그룹 내부 임직원을 위한 차세대 그룹웨어 구축 프로젝트로, 기존 레거시 시스템을 대체하고 업무 효율성과 사용자 경험을 개선하기 위해 진행되었습니다.`,
+      role: `Vue 기반 그룹웨어 UI 개발을 담당했으며, 화면 UI 구현과, 공통 컴포넌트 설계를 하였습니다. 기획,디자인,백엔드와의 협업을 통해 화면 단위 기능 구현을 진행했습니다.`,
+      techDetail: `Vue3 + Nuxt 기반 SPA 환경에서 화면을 개발했으며, 컴포넌트 중심 구조를 적용했습니다. SCSS 모듈화를 통해 화면 단위 스타일 구조를 정리했고, Git 기반 협업 환경에서 UI 개발을 진행했습니다.`,
       experience: `대규모 조직에서 사용하는 시스템 특성상 권한별 화면 분기와 복잡한 업무 플로우를 이해하는 데 어려움이 있었습니다. 기획 문서만으로는 부족한 부분이 많아 기획자와 직접 커뮤니케이션하며 업무 흐름을 정리했고, 이를 UI 구조에 반영하여 개발 효율을 높였습니다.`,
       result: `프로젝트는 일정에 맞춰 안정적으로 오픈되었으며, 공통 컴포넌트화와 스타일 구조 정립으로 이후 추가 개발 시 작업 속도와 유지보수성이 크게 개선되었습니다.`,
-      improvement: `UI 컴포넌트 설계를 더 체계적으로 정리하여 팀 전체가 공유할 수 있도록 개선하고 싶습니다.`,
+      // improvement: `UI 컴포넌트 설계를 더 체계적으로 정리하여 팀 전체가 공유할 수 있도록 개선하고 싶습니다.`,
     }
   },
   {
@@ -34,11 +34,11 @@ const projects = [
     siteUrl: 'https://notdomain.com',
     detail: {
       background: `한화 그룹 내 다양한 내부 데이터를 통합해 업무 효율과 AI 데이터 활용도를 높이기 위한 DWP(Digital Work Platform) 구축 프로젝트입니다.`,
-      role: `화면 UI 구현과 공통 컴포넌트 구조 설계를 담당했습니다.`,
-      techDetail: `Vue 기반 SPA 구조에서 화면 단위 컴포넌트 분리와 SCSS 스타일 모듈화를 적용해 유지보수성을 고려했습니다.`,
+      role: `Vue 기반 UI 개발을 담당하며 화면 UI 구현과 공통 컴포넌트 구조 설계를 담당했습니다.`,
+      techDetail: `Vue 기반 SPA 구조에서 화면 단위 컴포넌트 분리와 SCSS 스타일 구조를 적용해 유지보수성을 고려했습니다.`,
       experience: `데이터 중심 화면 특성상 정보 우선순위와 가독성을 조정하며 기획 의도를 UI 구조로 풀어내는 경험을 했습니다.`,
-      result: `반복되는 UI 패턴을 정리해 개발 생산성을 높였고 내부 사용자 기준에 맞는 안정적인 화면을 구현했습니다.`,
-      improvement: `화면 흐름을 더 빠르게 정리할 수 있었다면 효율이 더 높았을 것이라 느꼈습니다.`,
+      result: `공통 UI 컴포넌트와 스타일 구조를 정리하여 이후 화면 확장 시 동일한 UI 패턴을 빠르게 재사용할 수 있는 구조를 만들었습니다.`,
+      // improvement: `화면 흐름을 더 빠르게 정리할 수 있었다면 효율이 더 높았을 것이라 느꼈습니다.`,
     }
   },
   {
@@ -70,14 +70,14 @@ const projects = [
     date: '2022.02 - 2023.02',
     duration: '1년 1개월',
     contribution: '100%',
-    tech: ['vue', 'nuxt', 'git', 'scss'],
+    tech: ['vue', 'figma', 'git', 'scss'],
     thumbnail: 'assets/images/project04.png',
     siteUrl: 'https://notdomain.com',
     detail: {
       background: `업무 자료 공유와 협업을 위한 내부 시스템 구축 프로젝트입니다.`,
-      role: `주요 화면 UI와 공통 레이아웃을 구현했습니다.`,
+      role: `주요 화면 UI 개발을 담당했습니다.`,
       techDetail: `Nuxt 기반 구조를 활용해 페이지 구성과 컴포넌트 분리를 적용했습니다.`,
-      experience: `권한별 화면 분기와 업무 흐름을 이해하는 데 시간이 필요했습니다.`,
+      experience: `권한별 화면 구성과 업무 흐름을 이해하며 UI 구조를 설계해야 했습니다.`,
       result: `안정적인 화면 구성으로 내부 사용자 환경을 개선했습니다.`,
     }
   },
@@ -90,7 +90,7 @@ const projects = [
     date: '2021.09 - 2022.01',
     duration: '5개월',
     contribution: '70%',
-    tech: ['html', 'gulp', 'scss', 'git'],
+    tech: ['html', 'figma', 'scss', 'git'],
     thumbnail: 'assets/images/project05.png',
     siteUrl: 'https://www.skinnylab.co.kr',
     detail: {
@@ -110,7 +110,7 @@ const projects = [
     date: '2021.06 - 2021.08',
     duration: '3개월',
     contribution: '100%',
-    tech: ['html', 'js', 'css', 'svn'],
+    tech: ['html', 'js', 'css', 'git'],
     thumbnail: 'assets/images/project06.png',
     siteUrl: 'https://eis.work24.go.kr/elds/edwss/main/main.do',
     detail: {
