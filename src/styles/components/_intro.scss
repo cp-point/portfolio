@@ -1,0 +1,218 @@
+.intro {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 870px;
+    height: 1117px;
+    background: url('/portfolio/assets/images/intro-bg.png') no-repeat center;
+  }
+
+  &-title {
+    display: inline-block;
+    position: relative;
+    font-size: 156px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+  }
+
+  &-line {
+    position: absolute;
+    bottom: 34px;
+    left: 11px;
+    width: calc(100% - 100px);
+    height: 5px;
+    transform-origin: left center;
+    background: #000;
+  }
+
+  &-year {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 700;
+    color: #c3c3c3;
+  }
+
+  &-name {
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: 96px;
+    font-weight: 700;
+    text-align: right;
+    color: #86a8ff;
+    -webkit-clip-path: inset(0 100% 0 0);
+  }
+}
+
+@keyframes introBgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.intro {
+  animation: introBgMove 18s ease-in-out infinite alternate;
+}
+
+.home {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    min-height: calc(100vh - 200px);
+  }
+
+  &-cont {
+    flex: 1;
+    max-width: 760px;
+  }
+
+  &-pub {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #8a8fa3;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    font-size: 54px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #111;
+    word-break: keep-all;
+
+    strong {
+      display: inline-block;
+      font-weight: 700;
+      background: linear-gradient(90deg, #86a8ff 0%, #d6a8ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &-desc {
+    margin-top: 28px;
+    font-size: 19px;
+    line-height: 1.9;
+    color: #5f6475;
+    word-break: keep-all;
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 36px;
+  }
+
+  &-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    height: 52px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 999px;
+    line-height: 52px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &--primary {
+      color: #fff;
+      background: linear-gradient(90deg, #8ea2ff 0%, #d2a7ff 100%);
+      box-shadow: 0 12px 28px rgba(134, 168, 255, 0.28);
+    }
+
+    &--secondary {
+      color: #667085;
+      background: #fff;
+      border: 1px solid #dbe3f3;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &-visual {
+    flex: 0 0 360px;
+  }
+
+  &-visual-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 540px;
+    padding: 36px;
+    border: 1px solid #e8edf7;
+    border-radius: 36px;
+    text-align: center;
+    box-shadow: 0 18px 44px rgba(17, 17, 17, 0.06);
+    background: linear-gradient(180deg, #f8faff 0%, #fdfbff 100%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 0;
+      transform: rotateY(180deg);
+      width: 100%;
+      height: 100%;
+      background: url('/portfolio/assets/images/home_profile.png') no-repeat;
+      background-size: 63%;
+      background-position: 40% 10%;
+      filter: grayscale(1);
+    }
+  }
+
+  &-visual-deco {
+    width: calc(100% + -30px);
+    height: 0px;
+    border: 1px solid #0000000d;
+    position: relative;
+    left: 0px;
+    top: -18px;
+    box-shadow: 0 4px 12px gray;
+  }
+
+  &-visual-sub {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #8b90a5;
+  }
+
+  &-visual-name {
+    font-size: 36px;
+    line-height: 2.1;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &-visual-year {
+    font-size: 16px;
+    color: #777;
+  }
+}
